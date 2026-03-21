@@ -8,7 +8,7 @@ Showcases my projects, skills, and experience in a clean UI.
 ## 🚀 Live Demo
 
 🔗 https://MHA.Ramayya.com
-*(https://mharamayya-cloud-devops-portfolio.vercel.app/)*
+*(https://mharamayya-portfolio.vercel.app/)*
 
 ---
 
