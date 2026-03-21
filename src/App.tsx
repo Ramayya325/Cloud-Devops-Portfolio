@@ -194,6 +194,7 @@ const projects = [
     summary:
       "Designed a repeatable three-tier AWS architecture using Terraform for provisioning networking, compute, load balancing, and database resources.",
     tags: ["AWS", "Terraform", "VPC", "EC2", "ALB", "RDS"],
+    url: "https://github.com/Ramayya325/3-Tire-Architecture-by-using-Terraform-in-AWS.git",
     bullets: [
       "Provisioned VPC, subnets, route tables, security groups, EC2, ALB, and RDS using Infrastructure as Code.",
       "Separated web, application, and database layers to reflect scalable cloud design practices.",
@@ -205,6 +206,7 @@ const projects = [
     summary:
       "Built reusable Terraform configurations to automate AWS networking for public and private subnet architectures.",
     tags: ["AWS", "Terraform", "NAT Gateway", "Routing", "Security Groups"],
+    url: "https://github.com/Ramayya325/Terraform-AWS-VPC-Project-.git",
     bullets: [
       "Created a custom VPC with both public and private subnets for controlled workload separation.",
       "Configured Internet Gateway, NAT Gateway, route tables, and security groups for secure connectivity.",
@@ -216,6 +218,7 @@ const projects = [
     summary:
       "Configured an EC2 instance on AWS to host a static website with public accessibility, Linux-based setup, and deployment validation.",
     tags: ["AWS EC2", "Linux", "Elastic IP", "Web Hosting"],
+    url: "https://github.com/Ramayya325/fully-automated-IAC-project.git",
     bullets: [
       "Set up a Linux-based web server on Amazon EC2 to host a static website.",
       "Enabled public access using security groups and Elastic IP configuration.",
@@ -227,6 +230,7 @@ const projects = [
     summary:
       "Containerized a React application and automated build and deployment tasks using Docker and Jenkins.",
     tags: ["React", "Docker", "Jenkins", "AWS EC2"],
+    url: "https://github.com/Ramayya325/java-ci.cd.git",
     bullets: [
       "Created a Dockerfile and packaged the application into a portable container image.",
       "Configured Jenkins-based CI/CD automation to build and deploy on push events.",
@@ -602,6 +606,20 @@ function App() {
                       </span>
                     ))}
                   </div>
+
+                  {project.url && (
+                    <div className="mt-4">
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm text-teal-300 hover:text-teal-200 transition-colors"
+                      >
+                        <FaGithub className="text-xs" />
+                        View Repository
+                      </a>
+                    </div>
+                  )}
 
                   <ul className="feature-list mt-5 space-y-2.5 text-sm leading-6 text-slate-300">
                     {project.bullets.map((bullet) => (
